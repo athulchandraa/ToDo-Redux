@@ -149,7 +149,7 @@ function UpdateList({task}) {
                     </div>
                     {/* Button */}
                     <div className='md:flex items-center gap-2'>
-                        <button onClick={handleClose()}  className='cursor-pointer px-15 py-3 w-full rounded bg-gray-200 text-black font-medium '>Cancel</button>
+                        <button onClick={()=>handleClose()}  className='cursor-pointer px-15 py-3 w-full rounded bg-gray-200 text-black font-medium '>Cancel</button>
                         <button onClick={UpdateBtnTrigg}  className='px-15 py-3 w-full rounded bg-purple-700 text-white font-medium flex justify-center items-center gap-2 cursor-pointer'><FaPen/>Update</button>
                     </div>
                 </div>

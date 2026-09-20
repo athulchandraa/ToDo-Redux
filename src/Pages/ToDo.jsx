@@ -232,7 +232,7 @@ function ToDo() {
                     {/* Progress */}
                     <div className='px-3 py-1.5  rounded'>
                         {
-                            item.status =="completed" &&
+                            item.status =="complete" &&
                             <MdTaskAlt className='text-2xl text-green-700'/>
                         }
                         {
