@@ -30,7 +30,8 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 600,
+  width: '90%',
+  maxWidth:600,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -216,10 +217,10 @@ function ToDo() {
         </div>
         </div>
         <div className='md:px-5 flex md:gap-5 px-0.5 py-1 gap-1 sm:justify-between md:justify-start'>
-            <p className='px-5 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>All({GetElement.length})</p>
-            <p className='px-5 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>In Progress({GetElement.filter(item=>item.status=="progress").length})</p>
-            <p className='px-5 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>Completed({GetElement.filter(item=>item.status=="completed").length})</p>
-            <p className='px-5 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>High priority({GetElement.filter(item=>item.priority=="high").length})</p>
+            <p className='md:px-5 px-2 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>All({GetElement.length})</p>
+            <p className='md:px-5 px-2 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>In Progress({GetElement.filter(item=>item.status=="progress").length})</p>
+            <p className='md:px-5 px-2 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>Completed({GetElement.filter(item=>item.status=="completed").length})</p>
+            <p className='md:px-5 px-2 py-1 w-fit rounded-2xl bg-gray-100 text-sm text-gray-800 font-medium'>High priority({GetElement.filter(item=>item.priority=="high").length})</p>
         </div>
         <div className='my-4 px-5'>
             {/* Duplication */}
@@ -376,9 +377,9 @@ function ToDo() {
                         </div>
                     </div>
                     {/* Button */}
-                    <div className='flex items-center gap-2'>
-                        <button onClick={handleClose} className='cursor-pointer px-15 py-3 w-full rounded bg-gray-200 text-black font-medium '>Cancel</button>
-                        <button onClick={TaskStoring} className='px-15 py-3 w-full rounded bg-purple-700 text-white font-medium flex justify-center  items-center gap-1 md:gap-2 cursor-pointer'><FaPlus/>AddTask</button>
+                    <div className='md:flex items-center gap-2'>
+                        <button onClick={handleClose} className='cursor-pointer px-15 py-3 w-full rounded bg-gray-200 text-black font-medium my-2'>Cancel</button>
+                        <button onClick={TaskStoring} className='px-15 py-3 w-full rounded bg-purple-700 text-white font-medium flex justify-center my-2 items-center gap-1 md:gap-2 cursor-pointer'><FaPlus/>AddTask</button>
                     </div>
                 </div>
             </Box>
