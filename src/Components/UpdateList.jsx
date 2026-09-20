@@ -19,7 +19,8 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 600,
+  width: '90%',
+  maxWidth:600,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -147,8 +148,8 @@ function UpdateList({task}) {
                         </div> */}
                     </div>
                     {/* Button */}
-                    <div className='flex items-center gap-2'>
-                        <button  className='cursor-pointer px-15 py-3 w-full rounded bg-gray-200 text-black font-medium '>Cancel</button>
+                    <div className='md:flex items-center gap-2'>
+                        <button onClick={handleClose()}  className='cursor-pointer px-15 py-3 w-full rounded bg-gray-200 text-black font-medium '>Cancel</button>
                         <button onClick={UpdateBtnTrigg}  className='px-15 py-3 w-full rounded bg-purple-700 text-white font-medium flex justify-center items-center gap-2 cursor-pointer'><FaPen/>Update</button>
                     </div>
                 </div>

@@ -101,7 +101,7 @@ function ToDo() {
                 date:""
             })
             Swal.fire({
-                title: "Successfully Added to Todo List-'Warriors does't have an excuse😮‍💨'",
+                title: "Successfully Added to Todo List-'Warriors don't have an excuse😮‍💨'",
                 icon: "success",
                 draggable: true
                 });
